@@ -1,0 +1,41 @@
+case_id,amount,country,device_new,velocity,merchant_category,account_age_days,label,notes,risk_score
+1,7200,NG,true,4,electronics,5,High,"High amount + new device + high-risk country + extreme velocity",0.95
+2,45,DE,false,1,restaurant,1200,Low,"Normal behavior - established customer, low amount",0.05
+3,1200,GH,true,2,ecommerce,30,Medium,"Risk country + new device but moderate amount",0.65
+4,500,US,false,1,pharmacy,800,Low,"Established customer, normal transaction",0.10
+5,150,US,false,1,restaurant,600,Low,"Routine dining transaction",0.08
+6,8900,CN,true,3,electronics,15,High,"High-risk country, high amount, new device, high velocity",0.90
+7,95,SG,false,1,digital_content,500,Medium,"Moderate risk country, normal amount",0.45
+8,3200,AE,false,1,hotel,2000,Low,"Travel-related, established customer, legitimate merchant",0.25
+9,75,VN,true,1,atm,50,Medium,"High-risk country but small amount",0.50
+10,4500,US,true,2,unknown,5,High,"New device, young account, unknown merchant category",0.80
+11,250,US,false,1,pharmacy,1500,Low,"Established customer, normal pharmacy purchase",0.05
+12,6800,CN,true,3,ecommerce,10,High,"High-risk country + new device + velocity spike",0.92
+13,120,US,false,1,streaming,900,Low,"Routine subscription, established customer",0.08
+14,1800,US,false,1,travel,2500,Low,"Legitimate travel merchant, established customer",0.12
+15,4800,JP,true,2,financial_services,20,High,"Crypto-like transaction, new device, young account",0.78
+16,180,US,false,1,restaurant,700,Low,"Normal dining out",0.06
+17,7200,US,false,1,luxury_retail,1800,Low,"High amount but legitimate merchant and established customer",0.30
+18,5800,RU,true,4,unknown,3,High,"Multiple critical flags: RU + new device + extreme velocity + young account",0.96
+19,320,US,false,1,gas_station,1100,Low,"Normal fuel purchase",0.07
+20,2500,US,false,2,ecommerce,650,Medium,"Online purchase with moderate velocity",0.55
+21,99,US,false,1,gas_station,2000,Low,"Routine gas purchase",0.05
+22,5500,NG,true,3,electronics,10,High,"High-risk country + large amount + new device",0.88
+23,300,US,false,1,pharmacy,500,Low,"Normal pharmacy purchase",0.08
+24,1100,GH,true,1,ecommerce,25,High,"High-risk country + new device, medium amount",0.70
+25,210,US,false,1,restaurant,400,Low,"Normal dining",0.06
+26,8000,US,false,1,luxury_retail,3000,Low,"Legitimate high-value purchase",0.20
+27,3500,VN,true,2,atm,15,High,"High-risk country + new device + withdrawal",0.75
+28,150,US,false,1,gas_station,1500,Low,"Routine transaction",0.05
+29,6200,US,true,3,electronics,8,High,"New device + velocity spike + electronics (high-fraud category)",0.85
+30,45,US,false,1,restaurant,100,Low,"Small normal transaction",0.04
+31,999999,US,false,1,luxury_retail,3000,Medium,"Very high amount but established customer and legitimate merchant",0.35
+32,4000,SG,true,2,ecommerce,30,Medium,"Moderate-risk country + new device",0.60
+33,250,US,false,1,pharmacy,1200,Low,"Normal pharmacy",0.06
+34,7500,NG,true,4,electronics,5,High,"Critical: high-risk country + high amount + new device + extreme velocity",0.94
+35,120,US,false,1,digital_content,800,Low,"Routine streaming",0.07
+36,2000,US,false,1,travel,2200,Low,"Legitimate travel booking",0.15
+37,5000,CN,true,3,unknown,12,High,"High-risk country + new device + velocity + unknown merchant",0.82
+38,180,US,false,1,restaurant,900,Low,"Normal dining",0.05
+39,3200,US,true,1,ecommerce,60,Medium,"New device but established customer, moderate amount",0.50
+40,400,US,false,1,pharmacy,600,Low,"Normal pharmacy purchase",0.08

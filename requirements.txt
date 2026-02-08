@@ -1,0 +1,14 @@
+langchain-community
+langchain-text-splitters
+langchain-openai
+langchain-huggingface
+sentence-transformers
+chromadb
+pydantic
+python-dotenv
+tqdm
+pandas
+numpy
+onnxruntime<1.20.0
+matplotlib
+seaborn

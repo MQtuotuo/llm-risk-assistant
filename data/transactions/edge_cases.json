@@ -1,0 +1,112 @@
+[
+  {
+    "transaction_id": "edge_001",
+    "amount": 5000.01,
+    "country": "NG",
+    "device_new": true,
+    "velocity": 3,
+    "merchant_category": "electronics",
+    "account_age_days": 5,
+    "ground_truth": "high",
+    "description": "Just above €5,000 threshold from high-risk country with new device"
+  },
+  {
+    "transaction_id": "edge_002",
+    "amount": 4999.99,
+    "country": "NG",
+    "device_new": true,
+    "velocity": 3,
+    "merchant_category": "electronics",
+    "account_age_days": 5,
+    "ground_truth": "medium",
+    "description": "Just below €5,000 threshold - boundary case"
+  },
+  {
+    "transaction_id": "edge_003",
+    "amount": 0.99,
+    "country": "US",
+    "device_new": false,
+    "velocity": 1,
+    "merchant_category": "subscription",
+    "account_age_days": 1000,
+    "ground_truth": "low",
+    "description": "Sub-euro transaction - likely test or subscription"
+  },
+  {
+    "transaction_id": "edge_004",
+    "amount": 1,
+    "country": "US",
+    "device_new": false,
+    "velocity": 1,
+    "merchant_category": "financial_services",
+    "account_age_days": 1,
+    "ground_truth": "high",
+    "description": "Minimum transaction amount with high-risk indicators"
+  },
+  {
+    "transaction_id": "edge_005",
+    "amount": 50000,
+    "country": "US",
+    "device_new": false,
+    "velocity": 1,
+    "merchant_category": "luxury_retail",
+    "account_age_days": 3000,
+    "ground_truth": "low",
+    "description": "Very high amount but established customer and legitimate merchant"
+  },
+  {
+    "transaction_id": "edge_006",
+    "amount": 50001,
+    "country": "US",
+    "device_new": true,
+    "velocity": 1,
+    "merchant_category": "unknown",
+    "account_age_days": 5,
+    "ground_truth": "high",
+    "description": "Extremely high amount with risky profile"
+  },
+  {
+    "transaction_id": "edge_007",
+    "amount": 3000,
+    "country": "US",
+    "device_new": false,
+    "velocity": 9,
+    "merchant_category": "gas_station",
+    "account_age_days": 500,
+    "ground_truth": "high",
+    "description": "Extreme velocity (9 transactions in 10 min)"
+  },
+  {
+    "transaction_id": "edge_008",
+    "amount": 100,
+    "country": "US",
+    "device_new": false,
+    "velocity": 1,
+    "merchant_category": "pharmacy",
+    "account_age_days": 6,
+    "ground_truth": "high",
+    "description": "Small amount but very new account (6 days)"
+  },
+  {
+    "transaction_id": "edge_009",
+    "amount": 2000,
+    "country": "NG",
+    "device_new": false,
+    "velocity": 1,
+    "merchant_category": "travel",
+    "account_age_days": 2000,
+    "ground_truth": "medium",
+    "description": "High-risk country but established customer and legitimate merchant"
+  },
+  {
+    "transaction_id": "edge_010",
+    "amount": 100,
+    "country": "RU",
+    "device_new": true,
+    "velocity": 4,
+    "merchant_category": "unknown",
+    "account_age_days": 1,
+    "ground_truth": "high",
+    "description": "Multiple high-risk indicators even with low amount"
+  }
+]
